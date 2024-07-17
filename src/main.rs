@@ -13,7 +13,7 @@ pub fn main() {
     let video_subsystem = sdl_context.video().unwrap();
     
 
-    let mut window = video_subsystem.window("rust-sdl2 demo", 800, 600)
+    let mut window = video_subsystem.window("SDL_Graph_rs", 800, 600)
         .position_centered()
         .build()
         .unwrap();
@@ -25,7 +25,9 @@ pub fn main() {
     canvas.clear();
     canvas.present();
     let mut event_pump = sdl_context.event_pump().unwrap();
+     
 
+     // main loop
     'running: loop {
         canvas.set_draw_color(Color::WHITE);
         canvas.clear();
