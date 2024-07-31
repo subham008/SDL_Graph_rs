@@ -77,8 +77,8 @@ pub struct  Graph<'r>{
 
 impl Graph<'r> {
     fn get_max_x(self)->i32{
-         let  fdata_set:&GraphDataset = &self.dataset_array[0];
-         let max= fdata_set.get_max_x().clone();
+         let  fdata_set  = &self.dataset_array[0];
+         let max= fdata_set.get_max_x();
          
          return  max;
     }
